@@ -1,0 +1,9 @@
+hostIp : 10.0.195.174
+port : 7432
+database : postgres
+userName : gpadmin
+password : oushu
+tolerant : 300
+numberOfUsers : 100
+bufferSize : 100
+threadNum : 4

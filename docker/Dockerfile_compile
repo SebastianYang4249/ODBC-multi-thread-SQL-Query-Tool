@@ -1,0 +1,10 @@
+FROM centos:7.4.1708
+
+USER root
+
+ADD CentOS-Base.repo /CentOS-Base.repo
+RUN rm -f /etc/yum.repos.d/CentOS-Base.repo && mv /CentOS-Base.repo /etc/yum.repos.d/
+RUN yum clean all & yum makecache
+RUN yum install -y make cmake3 wget boost boost-devel unixODBC.x86_64 unixODBC-devel.x86_64 postgresql-odbc.x86_64
+
+RUN wget https://github.com/jbeder/yaml-cpp/archive/refs/tags/yaml-cpp-0.7.0.tar.gz && tar zxvf yaml-cpp-0.7.0.tar.gz && cd yaml-cpp-yaml-cpp-0.7.0/ && cmake3 . && make && make install

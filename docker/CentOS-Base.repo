@@ -1,0 +1,18 @@
+[extras]
+gpgcheck=1
+gpgkey=http://mirrors.tencentyun.com/centos/RPM-GPG-KEY-CentOS-7
+enabled=1
+baseurl=http://mirrors.tencentyun.com/centos/$releasever/extras/$basearch/
+name=Qcloud centos extras - $basearch
+[os]
+gpgcheck=1
+gpgkey=http://mirrors.tencentyun.com/centos/RPM-GPG-KEY-CentOS-7
+enabled=1
+baseurl=http://mirrors.tencentyun.com/centos/$releasever/os/$basearch/
+name=Qcloud centos os - $basearch
+[updates]
+gpgcheck=1
+gpgkey=http://mirrors.tencentyun.com/centos/RPM-GPG-KEY-CentOS-7
+enabled=1
+baseurl=http://mirrors.tencentyun.com/centos/$releasever/updates/$basearch/
+name=Qcloud centos updates - $basearch

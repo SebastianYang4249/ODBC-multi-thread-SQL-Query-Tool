@@ -1,0 +1,2 @@
+SELECT version() 1
+SELECT current_user 1
